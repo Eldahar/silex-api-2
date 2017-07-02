@@ -7,7 +7,7 @@ $app = new Silex\Application();
 
 // ... definitions
 $app->get('/api/second', function() {
-    return new \Symfony\Component\HttpFoundation\Response('Second api response!');
+    return new \Symfony\Component\HttpFoundation\JsonResponse(['Second api response!']);
 });
 
 $app->run();
